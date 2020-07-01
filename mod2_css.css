@@ -1,14 +1,10 @@
 
-
+body{
+	background-color: yellow;
+}
 
 *{
 	box-sizing: border-box;
-}
-
-h1{
-	text-align: center;
-	font-size: 50px;
-	margin: 50px;
 }
 
 .box{
@@ -16,17 +12,27 @@ h1{
 	width: 33%;
 	height: 200px;
 	margin:  40px auto;
-	padding: auto;
-	border: 5px solid black;
-	background-color: gray;
-	column-gap: 10px;
+	border: 1px solid black;
+	background-color: gray;}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	margin: 50px;
+	font-style: italic;
 }
 
-p{
+
+
+.text{
 	font-size: 20px;
 	text-align: left;
 	text-overflow: ellipsis;
-	margin:5px;
+	position: relative;
+	margin-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+
 }
 
 .container{
@@ -35,13 +41,138 @@ p{
 }
 
 #Chicken{
-	text-align: right;
+	background-color: lightblue;
 }
 
-h2{
-	font-size: 20px;
-	text-align: right;
-	margin-right: 4px;
-	display: block;
-	height: 5px;
+#Beef{
+	background-color: pink;
+	color: white;
 }
+
+#Sushi{
+	background-color: lightgreen;
+}
+
+	.food{
+	font-size: 30px;
+	font-style: bold;
+	text-align: center;
+	display: block;
+	position: relative;
+	left: 57%;
+	margin: 0px;
+	width: 200px;
+	height:50px;
+	border: 2px solid black;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+}
+
+
+@media (min-width: 992px) {
+
+	.box{
+	display: inline-grid;
+	width: 33%;
+	height: 200px;
+	margin:  40px auto;
+	border: 2px solid black;
+	background-color: gray;}
+	
+}
+
+	.food{
+	font-size: 30px;
+	font-style: bold;
+	text-align: center;
+	display: block;
+	position: relative;
+	left: 57%;
+	margin: 0px;
+	width: 200px;
+	height:50px;
+	border: 2px solid black;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+}
+
+
+
+@media (min-width: 768px ) and (max-width: 991px ) {
+
+	.box{
+	display: inline-grid;
+	width: 40%;
+	height: 200px;
+	margin:  40px auto;
+	margin-right: 2.5%;
+	border: 2px solid black;
+	background-color: gray;}
+
+
+	#third{
+		display: inline-grid;
+		width: 85%;
+		height: 200px;
+		margin:  40px auto;
+		border: 2px solid black;
+		background-color: gray;
+
+
+	}
+
+	.food{
+	font-size: 30px;
+	font-style: bold;
+	text-align: center;
+	display: block;
+	position: relative;
+	left: 48%;
+	margin: 0px;
+	width: 200px;
+	height:50px;
+	border: 2px solid black;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+}
+
+	#Sushi{
+		position: relative;
+		left: 75.8%;
+		float: right;
+	}
+
+
+
+}
+
+@media (max-width: 767px){
+
+	.box{
+	display: inline-grid;
+	width: 80%;
+	height: 33%;
+	margin: 5%;
+	border: 2px solid black;
+	background-color: gray;}
+
+	.food{
+	font-size: 30px;
+	font-style: bold;
+	text-align: center;
+	display: block;
+	position: relative;
+	left: 64%;
+	margin: 0px;
+	width: 200px;
+	height:50px;
+	border: 2px solid black;
+	font-family: Arial, Helvetica, sans-serif;}
+	
+}
+
+
+
+
+
+
